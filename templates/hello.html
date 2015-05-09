@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>SmartNinja basic Jinja template</title>
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <h1>Hello, SmartNinja!</h1>
+
+    {% if stevilo > 30 %}
+        <h2>{{ stevilo }}</h2>
+    {% else %}
+        <p>Stevila ni na zalogi</p>
+    {% endif %}
+
+    <p>{{ lista }}</p>
+
+    {% for item in lista %}
+        <p>{{ item }}</p>
+    {% endfor %}
+
+    <a href="/ura"><button>Koliko je ura?</button></a>
+
+
+
+
+</body>
+</html>
